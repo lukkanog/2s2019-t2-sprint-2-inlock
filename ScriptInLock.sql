@@ -109,6 +109,7 @@ ON E.EstudioId = J.EstudioId
 
 
 
+
 CREATE PROCEDURE BuscarPorEmailESenha @Email VARCHAR(255), @Senha VARCHAR(255)
 AS
 SELECT * FROM Usuarios WHERE Email = @Email AND Senha = @Senha
@@ -123,4 +124,7 @@ SELECT * FROM Jogos WHERE JogoId = @Id
 CREATE PROCEDURE BuscarEstudioPorId @Id INT
 AS
 SELECT * FROM Estudios WHERE EstudioId = @Id
+
+SELECT * FROM usuarios
+
 

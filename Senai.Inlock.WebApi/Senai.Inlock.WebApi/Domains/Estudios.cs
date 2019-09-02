@@ -1,0 +1,23 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace Senai.Inlock.WebApi.Domains
+{
+    public partial class Estudios
+    {
+        public Estudios()
+        {
+            Jogos = new HashSet<Jogos>();
+        }
+
+        public int EstudioId { get; set; }
+        public string NomeEstudio { get; set; }
+        public int? Origem { get; set; }
+        public DateTime DataCriacao { get; set; }
+        public int? UsuarioId { get; set; }
+
+        public Paises OrigemNavigation { get; set; }
+        public Usuarios Usuario { get; set; }
+        public ICollection<Jogos> Jogos { get; set; }
+    }
+}

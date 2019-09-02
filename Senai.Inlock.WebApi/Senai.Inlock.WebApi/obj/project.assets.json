@@ -12287,11 +12287,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\46735197879\\Desktop\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi.csproj",
+      "projectUniqueName": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi.csproj",
       "projectName": "Senai.Inlock.WebApi",
-      "projectPath": "C:\\Users\\46735197879\\Desktop\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi.csproj",
+      "projectPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi.csproj",
       "packagesPath": "C:\\Users\\46735197879\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\46735197879\\Desktop\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\obj\\",
+      "outputPath": "C:\\Users\\46735197879\\Desktop\\lucas_2semestre\\2s2019-t2-sprint-2-inlock\\Senai.Inlock.WebApi\\Senai.Inlock.WebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
