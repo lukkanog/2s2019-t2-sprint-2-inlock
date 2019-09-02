@@ -1,9 +1,9 @@
 --Banco de dados desenvolvida pela dupla Victor I. / Lucas N. para o software da empresa InLock --
 --DDL--
 
-Use M_InLock;
-
 Create database M_InLock;
+
+Use M_InLock;
 
 Create table Paises(
 	PaisId INT IDENTITY NOT NULL PRIMARY KEY,
@@ -93,3 +93,34 @@ join Usuarios
 On Usuarios.UsuarioId = Jogos.UsuarioId;
 
 --DQL--
+
+
+
+USE M_InLock
+
+
+
+SELECT E.*,J.*
+FROM Estudios E
+LEFT JOIN Jogos J
+ON E.EstudioId = J.EstudioId
+
+
+
+
+
+CREATE PROCEDURE BuscarPorEmailESenha @Email VARCHAR(255), @Senha VARCHAR(255)
+AS
+SELECT * FROM Usuarios WHERE Email = @Email AND Senha = @Senha
+
+
+CREATE PROCEDURE BuscarPorJogoId @Id INT
+AS
+SELECT * FROM Jogos WHERE JogoId = @Id
+
+
+
+CREATE PROCEDURE BuscarEstudioPorId @Id INT
+AS
+SELECT * FROM Estudios WHERE EstudioId = @Id
+
