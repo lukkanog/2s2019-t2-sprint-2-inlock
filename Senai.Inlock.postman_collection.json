@@ -1,0 +1,767 @@
+{
+	"info": {
+		"_postman_id": "d159bda2-b1ef-4d58-9dca-0152e338454a",
+		"name": "Senai.Inlock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Usuarios.Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDI5OTU3LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.PdI9uVPiz5lcCGKpY4MYv_v_JygNtemFnUbqTDeOMVs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"admin@admin.com\",\n\t\"senha\" : \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Usuarios.Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"admin@admin.com\",\n\t\"senha\" : \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jogos",
+			"item": [
+				{
+					"name": "Jogos.Listar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMzNDE5LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.IIef_UBJxmiXvGypIcdMU-pGGvaHDs_WKKFi6wDxhrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMzNDE5LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.IIef_UBJxmiXvGypIcdMU-pGGvaHDs_WKKFi6wDxhrA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTE2NzE2LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.3t5SFaigjqwOgpwbk4f9Dx2H99J2t4vjgOx8Dh8re_Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomeJogo\" : \"minecraft\",\n\t\"DataLancamento\" : \"2020-09-01\",\n\t\"Valor\" : \"50000\",\n\t\"Descricao\" : \"Test\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTA3MDExLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.cIJxcAtHPD18BWOHsObl9_KTWvYsbs_sequpLUy6RKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomeJogo\" : \"GTA II\",\n\t\"descricao\" : \"tem q atropelar as veia again\",\n\t\"dataLancamento\" : \"2019-09-03\",\n\t\"valor\" : 50,\n\t\"estudioId\" : 2,\n\t\"usuarioId\" : 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.ListarMaisCaros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTA3MDExLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.cIJxcAtHPD18BWOHsObl9_KTWvYsbs_sequpLUy6RKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/maiscaros",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"maiscaros"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.ListarMaisRecentes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTA3MDExLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.cIJxcAtHPD18BWOHsObl9_KTWvYsbs_sequpLUy6RKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/maisrecentes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"maisrecentes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.BuscarPorNome",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTA4MzE3LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.2cG9BMJHm637YJk1NJQwJ4rTk4uJFrsvZx_ywS96bQA",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/buscar/teste",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"buscar",
+								"teste"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Estudios",
+			"item": [
+				{
+					"name": "Estudios.Cadastrar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMxMDEwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.zwXmYHipy8Yns8h9IQf7i9y8cfiddVCHv5D8V9qr-00",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomeEstudio\" : \"Riot\",\n\t\"origem\" : 1,\n\t\"dataCriacao\" : \"2019-09-02\",\n\t\"usuarioId\" : 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.Listar",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMxMDEwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.zwXmYHipy8Yns8h9IQf7i9y8cfiddVCHv5D8V9qr-00",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\" : \"admin@admin.com\",\n\t\"senha\" : \"admin\"\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.Atualizar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMxMDEwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.zwXmYHipy8Yns8h9IQf7i9y8cfiddVCHv5D8V9qr-00",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"nomeEstudio\" : \"RIOt\",\n\t\"dataCriacao\" : \"2019-09-03\",\n\t\"origem\" : 2,\n\t\"usuarioId\" : 1\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.Deletar",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NDMxMDEwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.zwXmYHipy8Yns8h9IQf7i9y8cfiddVCHv5D8V9qr-00",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.ListarJogos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTA3MDExLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.cIJxcAtHPD18BWOHsObl9_KTWvYsbs_sequpLUy6RKE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/jogos",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"jogos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.BuscarPorNome",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTEwMzcwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.z39GQuZUrzTktZNGC9gl_0GyGeMWF8fU_7Q7umWM_PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/estudiobuscar/Blizzard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"estudiobuscar",
+								"Blizzard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.BuscarPorPais",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTEwMzcwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.z39GQuZUrzTktZNGC9gl_0GyGeMWF8fU_7Q7umWM_PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/buscarporpais/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"buscarporpais",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.ListarJogosPorPais",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTEwMzcwLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.z39GQuZUrzTktZNGC9gl_0GyGeMWF8fU_7Q7umWM_PQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/buscarjogosporpais/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"buscarjogosporpais",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.ListarPorAadm",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTEyMzY3LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.vdJT9F-TlzxOdR0zy1exlrPTyJkE86yZzWkfQHCpF94",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/listarporadm",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"listarporadm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.ListarEstudiosEAdms",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTE0Njk0LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.NrbQ_hZ49c12MkypJH3_Ar0UrDlhrWPswM3TBruHQyI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/estudioseadms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"estudioseadms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Jogos.ContarDiasRestantes",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTE2NzE2LCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.3t5SFaigjqwOgpwbk4f9Dx2H99J2t4vjgOx8Dh8re_Y",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5000/api/jogos/datalancamento",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"jogos",
+								"datalancamento"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Estudios.ListarRecentes",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsImp0aSI6IjEiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiIxIiwiZXhwIjoxNTY3NTE3MjIzLCJpc3MiOiJJbmxvY2suV2ViQXBpIiwiYXVkIjoiSW5sb2NrLldlYkFwaSJ9.qBegeDCt_Lnj1jkJa0fTg6acU7d3wHaX-a-kWQ04NUo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/estudios/estudiosrecentes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"estudios",
+								"estudiosrecentes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
